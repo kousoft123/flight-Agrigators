@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "e915e43a-a096-443d-aa6e-bcc720b0cb0e",
+		"name": "FlightAggregator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2116067"
+	},
+	"item": [
+		{
+			"name": "test-flight-req",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"from\": \"DEL\",\r\n  \"to\": \"BOM\",\r\n  \"date\": \"2025-08-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/api/flights/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"api",
+						"flights",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kongair-flight-req Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"from\": \"DEL\",\r\n  \"to\": \"BOM\",\r\n  \"date\": \"2025-08-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/api/flights/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"api",
+						"flights",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "flight-no-details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"from\": \"DEL\",\r\n  \"to\": \"BOM\",\r\n  \"date\": \"2025-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8089/api/flights/KD924/details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"api",
+						"flights",
+						"KD924",
+						"details"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
