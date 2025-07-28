@@ -2,9 +2,7 @@
 Flight-agrigator-application
 
 System Architecture Overview
-rust
-Copy
-Edit
+<br/>
 Client --> API Gateway --> AWS Lambda (Aggregator)
                                      |
                                      |---> FlightProviderAdapter1 (e.g., Amadeus)
