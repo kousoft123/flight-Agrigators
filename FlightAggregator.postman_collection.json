@@ -94,6 +94,38 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "flight-search-by-flightno",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"from\": \"DEL\",\r\n  \"to\": \"BOM\",\r\n  \"date\": \"2025-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "https://api.kong-air.com/flights/KA0292/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"kong-air",
+						"com"
+					],
+					"path": [
+						"flights",
+						"KA0292",
+						""
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
